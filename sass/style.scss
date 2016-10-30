@@ -1,0 +1,1662 @@
+/*!
+	Theme Name: crystalbeach
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.5
+	Author: Todd Motto (@toddmotto)
+	Author URI: Russ Berge
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+@import 'mobile-nav.scss';
+@import 'accordion.scss';
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#000;
+    background: url("img/waterBackground.jpg"); 
+    background-size: cover;
+
+}
+h1, h2, h3, h4, h5 p, a{
+  font-family: 'Open Sans', sans-serif;  
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+.clearfix{
+    clear:both;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+    max-width: 1000px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+}
+/* header */
+.header {
+    margin-left: -10px;
+    //width: 70%;
+    background:#000;
+    height:36px;
+    
+}
+.headerTitle{
+    position: relative;
+    margin:42px 0 0 0;
+    h1{
+        color:#fff;
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+/* logo */
+.logo {
+    position: relative;
+    //left: 119px;
+    top: -25px;
+    margin:0 auto;
+    width:19%;
+ h1{
+    font-size: 1.8em;
+    //margin-left: 4px;
+    margin-top: 42px;
+    color: #062c5f;
+    font-family: 'Kaushan Script', cursive;
+    float: right;
+    overflow:visible;
+    
+}
+}
+.logo-img {
+    height: auto;
+    //position: static;
+    //margin: 0 auto;
+    //display:block;
+    
+}
+.socialIcons{
+    position: relative;
+    top:0;
+    right:23px;
+    float:right;
+    img{
+    margin: 1px;
+    width: 30px;
+    display:inline;
+    }
+    h1{
+    display:none;
+    }
+}
+
+
+/* nav */
+
+.nav li.current-menu-item > a {
+  color: #fadb7b !important;  
+}
+.nav li a {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+.nav li a:hover {
+    color: #fadb7b;
+}
+/* sidebar */
+.showalways{ 
+    //background-color: #00b3ec;
+    width: 100%;
+    display: block;
+    height: 210px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    .vrc{
+        width: 94%!important;
+        float: left;
+        margin: 0 0 0 3%;
+    }  
+    .vrc .search-hdr {
+        font-size: 20px !important;
+        padding-right: 0 !important;
+        font-weight: bold;
+        margin-bottom: 10px;
+        background-image: url("img/eyeGlass.png");
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        height: 40px;
+        position: relative;
+        top: 5px;
+        left: 23px;
+        color: #00008b;
+        font-family: 'Coming Soon', cursive;
+        text-align: right;
+        width: 224px;
+    }
+    #searchbar_checkindate{
+        position: relative;
+        left: 10px;
+        width: 255px;
+        background-image: url("img/calendar.png");
+        background-repeat: no-repeat;
+        background-position-x: 214px;
+        height: 40px;
+    }
+    #searchbar_checkoutdate{
+        position: relative;
+        top: 0px;
+        left: 10px;
+        width: 255px;
+        background-image: url("img/calendar.png");
+        background-repeat: no-repeat;
+        background-position-x: 214px;
+        height: 40px;
+    }
+    .vrc .searchbar select {
+        position: relative;
+        top: -5px;
+        left: 10px;
+        width: 100px;
+    }
+    .vrc .searchbar input[type="submit"] {
+        position: relative;
+        bottom: 62px;
+        border-radius: 30px;
+        width: 100px;
+        left: 166px;
+    }
+    .searchResults .vrc .search-hdr{
+        width: 121rem;
+        background-position-x: 25rem;    
+    }
+    .searchResults #searchbar_checkindate{
+        width: 77rem;
+        left: 16rem;
+        position: relative;
+        background-position-x: 73rem;
+    }
+    .searchResults #searchbar_checkoutdate{
+        right: 18.8rem; 
+        width: 77.1rem;
+        background-position-x: 73rem;
+    }
+
+    .searchResults .vrc .searchbar input[type="submit"]{
+        width: 28.5rem;
+        right: 44rem;    
+    }
+}
+.sidebar {
+  float: left;
+  width:100%;
+  padding-left: 10px;
+}
+.searchBar.hide-results{
+    display: none;
+}
+.hpEvents, .hpVacaRentals, .hpVacaRentals, .hpPhotos, .hpliveWeb, .hprestaurant, .hpexplore, .hpfishing, .hpbirding, .hptodo, .hpdaytrips{
+    margin:0 auto;
+}
+.homepageSidebar {
+    float: left;
+    width: 98%;
+    padding-left: 10px;
+    .searchbar{
+    width:325px;
+    
+    }
+    #searchbar_checkindate{
+    left:1rem;
+    }
+    #searchbar_checkoutdate {
+    top: -7px;
+    right: -1rem;
+    width: 29rem;
+    }
+    .vrc .searchbar select {
+    top: -9px;
+    right: -1rem;
+    width: 10rem;
+    }
+    .vrc .searchbar input[type="submit"] {
+    top: -65px;
+    border-radius: 30px;
+    width: 14.5rem;
+    right: -15rem;
+    }
+}
+.pageSidebar{
+  float: left;
+  width:98%;
+  padding-left: 10px;  
+
+    #searchbar_checkindate{
+    position: relative;
+    left: 1.3rem;
+    width: 23rem;
+    top: 0px;
+    background-position-x: 19rem;
+    }
+    #searchbar_checkoutdate{
+    position: relative;
+    width: 26rem;
+    background-position-x: 22rem;
+    right: -1.4rem;
+    top: -7px;
+    }
+    .vrc .searchbar select{
+    right: -1.5rem;
+    width: 9rem !important;
+    top: -8px;
+    }
+    .vrc .searchbar input[type="submit"]{
+    top: -64px;
+    width: 15.5rem;
+    right: -11rem;    
+    }
+    .dataTables_wrapper{
+    display:none;
+    }
+}
+.conactSideBar{
+    width: 100%;
+    float: left;
+    padding-left: 1%;
+}
+.conactSideBar #searchbar_checkindate{
+    width: 27rem;
+    background-position-x: 23rem;
+    left: 3rem;
+}
+.conactSideBar #searchbar_checkoutdate{
+    right: -3rem;
+    width: 27rem;
+    background-position-x: 23rem;
+    top: -1rem;
+}
+.conactSideBar .vrc .searchbar select{
+    position: relative;
+    top: -14px;
+    right: -3rem;
+    width: 9rem;
+}
+.conactSideBar .vrc .searchbar input[type="submit"]{
+    position: relative;
+    top: -70px;
+    border-radius: 30px;
+    width: 12.5rem;
+    right: -14rem;
+}
+.blogSidebar{
+    float: left;
+    width: 97%;
+    padding-left: 10px; 
+    position: relative;
+    top: -258px;
+}
+.blogSidebar #searchbar_checkindate{
+    left: 1.5rem;
+    width: 28rem;
+    background-position-x: 24rem;  
+}
+.blogSidebar #searchbar_checkoutdate{
+    right: -1.5rem;
+    width: 28rem;
+    background-position-x: 24rem;
+    top: -1rem;
+}
+.blogSidebar .vrc .searchbar select{
+    top: -10px;
+    right: -1.7rem;
+    width: 10rem;
+}
+.blogSidebar .vrc .searchbar input[type="submit"]{
+    top: -6.8rem;
+    right: -14rem;
+    width: 15.5rem;
+}
+.VacaPageSidebar{
+    .searchWidget{
+        display:none;
+    }
+}
+.searchBarResults .vrc .search-hdr{
+    background-position-x: 43%;    
+}
+.searchBarResults #searchbar_checkindate{
+    position:relative;
+    width: 90rem;
+    left: 19rem;
+    background-position-x: 86rem;
+}
+.searchBarResults #searchbar_checkoutdate{
+    position: relative;
+    right: 15.6rem;
+    width: 90rem;
+    background-position-x: 86rem;
+}
+.searchBarResults .vrc .searchbar select{
+    position: relative;
+    right: 40rem;
+    width: 24rem !important;
+}
+.searchBarResults .vrc .searchbar input[type="submit"]{
+   position: relative;
+   width: 30rem;
+   right: 34rem; 
+}
+.leftSideBar {
+    width: 98%;
+}
+.leftSideBar #searchbar_checkindate {
+    width: 27rem;
+    background-position-x: 23rem;
+    right: -1rem;
+    position: relative;
+}
+.leftSideBar #searchbar_checkoutdate {
+    right: -0.8rem;
+    width: 27rem;
+    background-position-x: 23rem;
+    top: -1rem;
+}
+.leftSideBar .vrc .searchbar select {
+    top: -1rem;
+    position: relative;
+    right: -.9rem;
+    width: 10rem !important;
+}
+.leftSideBar .vrc .searchbar input[type="submit"] {
+    top: -7rem;
+    width: 16.5rem;
+    right: -11rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+    background:#fff!important;
+}
+.hpSocials{
+    
+}
+.hpEvents{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/MusicEvent-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8)!important;
+     top: -32px;
+     position: relative;
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpVacaRentals{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/vacationRental-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpPhotos{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Pelican_PinkSky-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpliveWeb{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Ferry-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hprestaurant{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/ShrimpNOysters-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpexplore{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Lighthouse-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpfishing{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Fishing_Sunset-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpbirding{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Heron-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hptodo{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Waterslide-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.hpdaytrips{
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/PleasurePier-325.jpg);
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 190px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    span h2{
+     background:rgba(0,0,0,.8);
+     color: #fff;
+     height: 50px;
+     width: 100%;
+     text-align:center;
+     font-family:'Kaushan Script', cursive;
+     font-size:3em;
+    }
+}
+.grayLineBottom{
+    border-bottom: solid 3px #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    clear:both;
+}
+.cblnImg{
+    position:relative;
+    top:0;
+}
+a img.alignleft.cblnImg{
+    margin:-25px 0 26px 0;
+}
+.su-row{
+    margin-top:5px;
+}
+.su-column-size-2-3{
+    width:69%!important;
+}
+.su-column-size-1-3{
+    width: 28%!important;
+    position:relative;
+    right:2%;
+}
+.accordion{
+    width:100%
+}
+.orangeBlock{
+    background: #ff5f2b;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2em;
+    letter-spacing: 0px;
+    padding: 5px;
+}
+.searchWidget{
+    clear:both;
+}
+.rentalAgecieswidget{
+    margin:0 0 0 0;
+    padding: 0 0 10px 0;
+    clear:both;
+}
+/* main Content*/
+.slider{
+    border:solid 1px #8f6c50;
+    padding:15px 0 0 0;
+    width: 94%;
+    margin: 108px auto 0 auto;
+    overflow: hidden;
+    h3{
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 3px;
+        margin-top: 0;
+    }
+}
+img.homepageLighthouse {
+   width:100px;
+   height:auto;
+}
+.mainContent {
+    float: right;
+    width: 100%;
+    padding: 10px 20px;
+    background:rgba(255, 255, 255, .8)
+}
+body > div.wrapper > main > div.blogContainer > aside > aside > form{
+    display: none;
+}
+.upw-posts article{
+    border-bottom: none !important;
+}
+.postBox{
+    border-bottom: #ccc solid 2px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+#archive-container{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    width: 95%;
+    margin-left: 3%;
+    z-index: 2000;
+    position: relative;
+    top: 60px;
+}
+.categoryContainer{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    width: 95%;
+    margin-left: 3%;
+    z-index: 2000;
+    position: relative;
+    top: 60px;
+}
+.blogContent{
+    padding:20px;
+    float: right;
+    width:100%;
+    overflow: hidden;
+    clear: right;
+    position: relative;
+    top: -280px;
+    background:rgba(255, 255, 255, .8);
+}
+.blogContent img{
+    max-width: 50%;
+    float: right;
+    margin: 10px;
+}
+.blogContent {
+h1{
+    font-size:3.5rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+p{
+    font-size: 1.5rem;
+}
+}
+.blogContainer .topRow3 {
+   border-bottom: solid 5px #ccc;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    clear: both; 
+}
+full-pagecontent{
+    width: 100%
+}
+.searchWidget{
+    #searchbar_checkindate{
+    left: 16px;   
+    width: 24rem;
+    background-position-x: 20rem;
+    } 
+    #searchbar_checkoutdate{
+    top: -5px;
+    right: -1.5rem;
+    width: 24rem; 
+    background-position-x: 20rem;
+    }
+    .vrc .searchbar select{
+    top: -8px;
+    right: -1.5rem;
+    width: 10rem;
+    }
+    .vrc .searchbar input[type="submit"]{
+    top: -66px;
+    width: 12.5rem;
+    right: -13rem;
+    }
+}
+/* footer */
+.footer-widget {
+  float: left;  
+}
+.footer-1 {
+  float: left;
+    background: #fff;
+    width: 94%;
+    height: 150px;
+    margin-left: 3%;
+    position: relative;
+    top: -5px;
+}
+.footer-2 {
+   float: left;
+    background: #fff;
+    width: 94%;
+    height: 150px;
+    margin-left: 3%;
+    position: relative;
+    top: 1px;
+}
+.footer-3 {
+   float: left;
+    background: #fff;
+    width: 94%;
+    height: 150px;
+    margin-left: 3%;
+    position: relative;
+    top: 8px;
+}
+.footer {
+    //position: absolute;
+    clear: left;
+    color: #fff;
+    padding-top: 20px;
+    float: right;
+    padding-right: 10%;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0px auto 0px auto;
+    display: block;
+    //bottom:0;
+    background: #172762;
+    height: 196px;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover{
+    color: #00b3ec;
+}
+.footerWidgetArea{
+    margin-top: 22px;
+    clear:both;
+}
+.footerTextBox p{
+    font-size: 20px !important;
+}
+ #contactFooter {
+    margin-top: 75px;
+}
+.webcamFooter .widget_ultimate_posts {
+    
+}
+.webcamFooter .upw-posts article{
+    float: left;
+    width: 93%;
+    margin: auto 3%;
+}
+#postFooter{
+    margin-top: 113px;
+}
+#fullWidthPageFooter{
+
+}
+#PageFooter{
+  margin-top: 30px;  
+}
+#contactFooter{
+    width:98%;
+}
+.footerSocials{
+    position: relative;
+    right: 24px;
+    bottom: 66px;
+    float: right;
+    img{
+        width:70px;
+    }
+}
+.footerSocials img{
+    padding:4px;
+}
+.copyright{
+    padding-left: 20px;
+    position: relative;
+    bottom: -90px;
+}
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    font-size:15px;
+}
+.hidemobile{
+    display:none;
+    
+}
+.showmobile{
+    position: relative;
+    right: 0px;
+    .vrc .search-hdr {
+    font-size: 15px !important;
+    padding: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 325px;
+    }
+    #searchbar_checkindate{
+        left: 9px;
+        width: 23rem;
+        background-position-x: 19rem;
+    }
+    #searchbar_checkoutdate{
+        top: -9px;
+        right: -.8rem;
+        width: 23rem;
+        background-position-x: 19rem;
+    }
+    .vrc .searchbar select{
+        top: -5px;
+        right: -0.9rem;
+        width: 10rem;
+    }
+    .vrc .searchbar input[type="submit"]{
+        top: -61px;
+        width: 12rem;
+        right: -13rem;
+    }
+    .hpEvents span button{
+        background:#ff5f2b;
+        position:relative;
+        display:block;
+        bottom: -51px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 5px;
+        color:#fff;
+    }    
+}
+#post-2651 > div > div.accordion > ul > div.showmobile > a > div > span > h2{
+    background: rgba(0,0,0,0.8)!important;
+    position: relative;
+    top: -33px;
+}
+#homepageContent h2{
+   font-family: 'Kaushan Script', cursive;
+   font-size:1.6em;
+   background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Swash-Behind-Exlpore-Bolivar.png);
+   background-size: 325px 23px;
+   background-repeat: no-repeat;
+}
+.homePageLinks{
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+}
+.homePageLinks2 a img.alignleft{
+    margin:0;
+   // width:auto;
+}
+.homePageLinks a img.alignleft{
+margin: 0; 
+//max-width:132px;
+}
+.widgetLinks{
+display: flex;
+justify-content: space-between;
+overflow: hidden;
+a img.alignleft{
+    padding:2px;
+    margin:0;
+}    
+}
+#n2-ss-1 > div.n2-ss-widget.n2-ss-widget-display-desktop.n2-ss-widget-display-tablet.n2-ss-widget-display-mobile.nextend-bullet-bar.nextend-bullet-bar-horizontal{
+   top: 550px !important;
+   left: 300px !important;
+   width: 700px;
+   height:40px !important;
+   background: #003bb3;
+   left: 212px;
+    position: relative;
+    margin: 0px 20px;
+    
+}
+div#n2-ss-1 .n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot {
+ background:#fff !important;
+}
+div#n2-ss-1 .n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot:active{
+   background: #fff !important;
+   border-radius: solid 2px !important;
+   border-color: #00b3ec !important;
+   
+}
+.homePageContent{
+    background: rgba(255, 255, 255, .9);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: -12px;
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 15px 30px;
+    overflow: hidden;
+    
+}
+.pageContent{
+    p{
+      font-size:1em;
+      font-weight:700;
+      color:#172762;
+  }
+}
+.bolivarBox p{
+    
+}
+.bolivarBox h2{
+   font-size: 24px;
+   
+}
+.cllnBox{
+   margin-top: 10px; 
+}
+.searchbar{
+    background: #00b3ec;
+    //padding: 10px;
+   // border-radius: 10px;
+   // border-color: #00008b;
+    //border-width: 1px;
+    //border-style: solid;
+    height: 200px;
+    width: 100%;
+}
+.searchBox .vrc .search-hdr {
+    padding: 0px;
+    font-size: 15px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    color: #00008b;
+    background-position-x: 0px !important;
+    width: 306px;
+    text-align: right;
+}
+.searchBox #searchbar_checkindate{
+   margin-left: 0;
+   position: relative;
+   left: 0;
+   width: 25rem;
+   background-position-x: 21rem;
+}
+.searchBox #searchbar_checkoutdate {
+    right: 0rem;
+    width: 25rem;
+    background-position-x: 21rem;
+    top: -.6rem;
+}
+.searchBox .vrc .searchbar select {
+    top: -1rem;
+    right: 7.4rem;
+    width: 10rem !important;
+}
+.searchBox .vrc .searchbar input[type="submit"] {
+    font-size: 14px;
+    padding: 6px 15px;
+    top: -68px;
+    right: -6.5rem;
+}
+.info-box-row .ffs-info-box .ffs-icon-container i {
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    margin: 5px 0;
+    display: none;
+}
+.ffs-content-box > div > h2{
+    font-size:1.5em;
+}
+.linkBox {
+    max-width: 100%;
+}
+.linkBox img{
+    width: 100%;
+}
+.dailyphotos{
+    width:100%;
+    margin-top: -15px;
+}
+.recentHeadlines {
+    background: #c0362c;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    width: 100%;
+    margin-top: -8px;
+    
+}
+.recentHeadlines h3{
+    text-align: center;
+    text-transform: capitalize;
+    color:#fff;
+    font-size: 1.5em;
+}
+#eventsCalendar{
+    background:#00b3ec;
+    width: 100%;
+    margin-top: -15px;
+}
+#eventsCalendar h3{
+    text-align: center;
+    text-transform: capitalize;
+    color:#000;
+    height:42px;
+    padding-top: 4px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 2em;
+    margin-top: 0;
+}
+#historyInfo{
+    background:#ffab4d;
+    width: 100%;
+    margin-top: -16px;
+}
+#historyInfo h3 {
+   text-align: center;
+   text-transform: capitalize;
+   color:#000;
+   height:42px;
+   padding-top: 4px;
+   font-family: 'Coming Soon', cursive;
+    font-size: 2em;
+    margin-top: 0;
+}
+#dailyPhotos{
+   background:#ffed35;
+   width: 100%;
+   margin-top: -15px; 
+}
+#dailyPhotos h3{
+   text-align: center;
+   text-transform: capitalize;
+   color:#000;
+   height:42px;
+   padding-top: 4px; 
+   font-family: 'Coming Soon', cursive;
+    font-size: 2em; 
+    margin-top: 0;
+}
+#liveWeb{
+   background:#8bc44f;
+   width: 100%;
+   margin-top: -16px;   
+}
+#liveWeb h3{
+   text-align: center;
+   text-transform: capitalize;
+   color:#000;
+   height:42px;
+   padding-top: 4px; 
+   font-family: 'Coming Soon', cursive;
+    font-size: 2em; 
+    margin-top: 0;
+}
+#cblnHeader li {
+   line-height: 44px;
+    color: #00b3ec;
+    text-align: left;
+    font-size: 19px;
+    margin-left: -18px
+}
+#cblnHeader li:before {
+    color: #ccc;
+}
+.topRow{
+    border-bottom: solid 5px #ccc;
+    width:90%;
+    margin-left:5%;
+    margin-bottom: 10px;
+    margin-top: -100px;
+}
+.bottomAds1 {
+  background: #ffab4d;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bottomAds2 {
+  background: #00b3ec;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bottomAds3 {
+  background: #ffd80c;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bottomAds4 {
+  background: #ff5f2b;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bottomAds5 {
+  margin-top: -72px;
+  background: #8bc44f;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.bottomAds1 h3, .bottomAds2 h3,.bottomAds3 h3, .bottomAds4 h3, .bottomAds5 h3 {
+  font-size: 2em;
+  font-family: 'Coming Soon', cursive;
+  margin-bottom: 0;
+}
+.adspaceBlock{
+    background:#ccc;
+    text-transform: uppercase;
+    color:#fff;
+    height: 150px;
+    padding-top: 38px;
+}
+.lastadspaceBlock{
+    margin-top: 0px;
+    background:#ccc;
+    text-transform: uppercase;
+    color:#fff;
+    height: 150px;
+    padding-top: 38px;
+}
+
+.blogContainer{
+    background: #fff;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1000;
+    top: 90px;
+    
+}
+.exploreContent{
+    float:left;
+    width: 47%;
+    height: auto;
+    clear: right;
+    position: relative;
+    top: 12px;
+}
+.exploreContent h2{
+    font-size: 20px;
+    background: #a7f2f5;
+}
+#post-71 > div.exploreContent > h2{
+    background: #ffed35;
+}
+#post-77 > div.exploreContent > h2 {
+    background: #00b3ec;
+}
+#post-67 > div.exploreContent > h2 {
+    background: #ff8e30;
+}
+.exploreImg{
+    float: right;
+}
+.exploreImg img{
+    width: 144px;
+    height: auto;
+    margin-top: 29px;
+    
+}
+.pagination {
+    position: relative;
+    top: 120px;
+    right: -110px;
+}
+
+.contactContainer{
+    width: 100%;
+    background:rgba(0,0,0,.9);
+    float: right;
+    color: #fff;
+    padding: 24px;
+    margin-top: 130px;
+    font-size: 20px;
+}
+
+.mainContainer{
+    overflow: hidden;
+}
+.pageTitle {
+    position: static;
+    text-align: center;
+}
+.pageContainer, .VacaPageContainer{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    width: 92%;
+    margin: 0 auto;
+    z-index: 1000;
+    position: relative;
+    margin-top: 130px;
+    padding:5px;
+}
+ .accordion ul li h2 {
+    background: #ff5f2b !important;
+    clear: both;
+    padding: 4px 0;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    margin: 0px 0 0px 0;
+    width: 100%;
+    border-radius:5px; 
+    font-size:1.5em !important;
+}
+#post-203 > div.su-row > div.su-column.su-column-size-2-3 > div > div.threefifths > div.realEstateDev > h3{
+    position: relative;
+    margin-bottom: 8px;
+    top:0;
+}
+.full-pageContainer{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    //margin-left:3%;
+    z-index: 1000;
+    position: relative;
+    margin-top: 0px;
+}
+#defaultContent{
+  width: 100%;
+  float: right;
+  padding:20px;  
+}
+.full-pageContainer article{
+  width: 100%;
+  float: left;
+  padding:20px;  
+}
+.pageContent article{
+  width: 66%;
+  float: right;
+  padding:20px;
+}
+.pageContainer h1, .full-pageContainer h1, .full-pageContainer h2{
+   font-size: 3rem; 
+   text-align: center;
+   font-family: 'Kaushan Script', cursive;
+}
+#VacaContent{ 
+    h1{
+    font-size: 3rem; 
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    }
+    p{
+    font-size:1.2em;    
+    }
+}
+    
+.webcamContainer{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    width: 94%;
+    margin-left:3%;
+    z-index: 1000;
+    position: relative;
+    margin-top: 130px;
+    padding-bottom: 60px;
+}
+.webcamContainer h2 {
+    font-size: 3em;
+}
+.webcamContainer h3 {
+    font-size: 2em;
+}
+.topRow2{
+    border-bottom: solid 5px #ccc;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 37px;
+}
+.topRow3{
+    border-bottom: solid 5px #ccc;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 285px;
+}
+.webcamThumbBox{
+    width:65%;
+    height: auto;
+    display:block;
+    margin:0 auto;
+}
+.webcamThumbBox h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #00008b;
+}
+.ffs-five-one{
+    margin-right:1% !important;
+    width: 19% !important;
+}
+.ffs-three-one{
+    margin-right:1% !important;
+    width: 31%!important;
+}
+.ffs-three-two{
+    margin-right:1% !important;
+}
+.nav input[type="checkbox"] {
+    display:none;
+}
+.nav input[type="checkbox"] {
+    display:none;
+}
+.hide-searchBar form .searchbar{
+  display:none;
+}
+.hide-results #searchbar-result{
+  display:none;
+}
+#DataTables_Table_0 > tbody > tr > td > div.col-sm-9 > p > a:nth-child(1){
+  display:none;
+}
+#post-203 > div.su-row > div.su-column.su-column-size-1-3 > div > div{
+    width:60%;
+    margin:0 auto;
+}
+#post-203 > div.su-row > div.su-column.su-column-size-2-3 > div > div.twofifths > div > div{
+    width:60%;
+    margin:0 auto;
+}
+.hpSocials{
+    display:none;
+}
+#post-203 > div.su-row > div.su-column.su-column-size-1-3 > div > div.golfcart > div > a > img{
+    //width:125px;
+}
+.vacaHomes{
+    clear:both;
+    a img.alignleft {
+    float: left;
+    margin: 0 0 0 0;
+    width: 92px;
+}
+}
+.blogContainers{
+        margin-top:130px;
+}
+.homeRow{
+    margin-left: 30px;
+    width: 90%!important;
+}
+#post-203 > div > div.accordion > ul > div.su-row.homeRow > div.su-column.su-column-size-1-3{
+    margin: 0 0 0 2%!important;
+}
+.homeGallery{
+    display: block;
+    padding: 5px 20px 0 20px;
+    width: 94%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.rentalHomes{
+    padding: 0px;
+    margin: 0 0 0 0;
+    float:left;
+    min-height:43px;
+    width:120px;
+    img{
+        float:left;
+        padding: 3px 3px 0 3px;
+    }
+    img:hover{
+        opacity:.7;
+    }
+}
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+.webCamMain img{
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+.bx-viewport{
+    margin-left: 5px;
+}
+/*-------------------------------------------------------*/
+
+
+
+@import 'responsive.scss';
+

@@ -1,0 +1,1265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2016, Mar 7, 2016 2:14:32 PM
+    Author     : Russ  Berge
+*/
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:375px) {
+    .vacaHomes{
+       
+        a img.alignleft {
+            width: 111px;
+        }
+    }
+    .searchbar{
+        //width: 335px;
+    }
+    .showalways{
+        .vrc .search-hdr{
+            background-position-x: 0px;
+            width: 235px;
+        }
+        #searchbar_checkindate{
+            left: 10px;
+            width: 310px;
+            background-position-x: 269px;
+        }
+        #searchbar_checkoutdate{
+            left: 10px;
+            width: 310px;
+            background-position-x: 269px;
+        }
+        .vrc .searchbar select{
+            left: 10px;
+        }
+        .vrc .searchbar input[type="submit"]{
+            width: 100px;
+            left: 224px;
+        }
+    }
+    .slider{
+        margin: 119px auto 0 auto;
+    }
+    .homeGallery{
+        width: 100%;    
+    }
+    .rentalHomes{
+        width: 110px;
+    }
+    .footerSocials{
+       right: 40px; 
+    }
+}
+@media only screen and (min-width:414px) {
+    body{
+        background:url("img/background-3-2000.jpg")no-repeat center center fixed;
+        background-size: cover;
+    }
+    .vacaHomes{
+     
+        a img.alignleft {
+           width: 117px;
+        }
+    }
+     .searchbar{
+        //width: 373px;
+    }
+    .dataTables_wrapper{
+        margin-top: -22px;
+    }
+    .homeGallery {
+        width: 97%;
+    }
+    .rentalHomes {
+        width: 120px;
+    }
+}
+@media only screen and (min-width:480px) {
+    
+}
+@media only screen and (min-width:568px) {
+    .slider {
+        margin: 153px auto 0 auto;
+    } 
+    .homeGallery {
+    width: 92%;
+}
+    .searchbar{
+        width: 528px;
+    }
+    .showalways{
+        .vrc .search-hdr{
+            background-position-x: 80px;
+            width: 335px;
+        }
+        #searchbar_checkindate{
+            left: 67px;
+            width: 386px;
+            background-position-x: 346px;
+        }
+        #searchbar_checkoutdate{
+            left: 67px;
+            width: 386px;
+            background-position-x: 346px;
+        }
+        .vrc .searchbar select{
+            left: 67px;
+        }
+        .vrc .searchbar input[type="submit"]{
+            width: 180px;
+            left: 274px;
+        }
+    }
+    .footer{
+      height: 199px; 
+    }
+    .copyright{
+       bottom: -106px; 
+    }
+    .footerSocials{
+       bottom: 61px; 
+       right: 125px;
+    }
+    .footer-1, .footer-2, .footer-3{
+       width: 86%;
+       margin-left: 7%;
+    }
+}
+@media only screen and (min-width:660px) {
+    .slider {
+        margin: 166px auto 0 auto;
+    }
+    .searchbar {
+          width: 627px;
+    }
+    .showalways{
+        .vrc .search-hdr{
+            background-position-x: 80px;
+            width: 335px;
+        }
+        #searchbar_checkindate{
+            left: 102px;
+            width: 420px;
+            background-position-x: 379px;
+        }
+        #searchbar_checkoutdate{
+            left: 102px;
+            width: 420px;
+            background-position-x: 379px;
+        }
+        .vrc .searchbar select{
+            left: 102px;
+        }
+        .vrc .searchbar input[type="submit"]{
+            width: 180px;
+            left: 343px;
+        }
+    }
+    .homeGallery {
+        width: 96%;
+    }
+    .footer-1, .footer-2, .footer-3 {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .footerSocials {
+        bottom: 46px;
+        right: 154px;
+    }
+}
+@media only screen and (min-width:736px){
+    .homeGallery {
+        width: 100%;
+    }
+    .rentalHomes {
+        width: 116px;
+    }
+    .vacaHomes a img.alignleft {
+        width: 115px;
+    }
+    .footerSocials{
+       right: 183px; 
+    }
+}
+@media only screen and (min-width:768px) {
+    .wrapper{
+        padding-bottom: 664px;
+    }
+    .rentalHomes {
+        width: 120px;
+    }
+    .accordion ul li h2{
+        border-radius: 0;                                                                                                                                                                                            
+    } 
+            
+   .accordion{ 
+       input[type="checkbox"], input[type="radio"]{
+        display: none;
+       }
+       ul li {
+           list-style-type: none;
+       }
+    }
+    
+    .hidemobile{
+        display:initial;
+    }
+    .showmobile{
+        display:none;
+    }
+    .logo {
+        position: relative;
+        h1{
+            font-size: 6em;
+            margin: 8px 100px 0 0px;
+            color:#fff;
+            float: left;
+        }
+    }
+    .logo-img {
+        max-width: 100%;
+        width: 110px;
+        margin: 6px 0 0 20px;
+    }
+    .homePageContent{
+        top:145px; 
+        width:100%;
+    }
+    .orangeBlock{
+        margin-top:-60px;
+    }
+    img.homepageLighthouse {
+        width: 220px;
+        height: auto;
+    }
+    #homepageContent h2{
+        font-size:3.6em;
+        background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Swash-Behind-Exlpore-Bolivar.png);
+    }
+    .bottomAds1 h3, .bottomAds2 h3, .bottomAds3 h3, .bottomAds4 h3, .bottomAds5 h3 {
+        font-size: 1.1em;
+    }
+    .last{
+        clear:none !important;
+    }
+    .dailyphotos{
+        margin-top: 0;
+    }
+    #cblnHeader li {
+        line-height: 36px;
+        font-size: 16px;
+    }
+    .searchbar {
+        //width: 725px !important;
+    }
+    .showalways{
+        height:303px;
+        
+        .vrc {
+            
+        }
+        .vrc .col-sm-3 {
+            width: 100%!important;
+        }
+        .vrc .search-hdr{
+            background-position-x: 80px;
+            width: 335px;
+            margin: 0 320px 0 0;
+            left: 40px;
+        }
+        #searchbar_checkindate{
+            left: 0px;
+            width: 420px;
+            background-position-x: 379px;
+            top:10px;
+        }
+        #searchbar_checkoutdate{
+            left: 0px;
+            width: 420px;
+            top: 10px;
+        }
+        .vrc .searchbar select{
+            left: 465px;
+            top: -128px;
+            width: 184px;
+        }
+        .vrc .searchbar input[type="submit"]{
+            width: 180px;
+            left: 464px;
+            top: -127px;
+        }
+    }
+    .dataTables_wrapper {
+        position: relative;
+        clear: both;
+        zoom: 1;
+        margin: 0px 0 39px 0;
+    }
+    .blogSidebar #searchbar_checkindate{
+        left: 1.5rem;
+        width: 67rem;
+        background-position-x: 63rem;   
+    }
+    .blogSidebar #searchbar_checkoutdate{
+        right: 16.9rem;
+        width: 67rem;
+        background-position-x: 63rem;
+        top: 4.5rem;
+    }
+    .blogSidebar .vrc .searchbar select{
+        top: 90px;
+        right: 35.3rem;
+        width: 29rem;
+    }
+    .blogSidebar .vrc .searchbar input[type="submit"]{
+        top: 9.2rem;
+        right: 16rem;
+        width: 29.5rem;
+    }
+    .footerWidgetArea {
+            margin-top: 0px;
+            width: 100%
+     }
+     .footer-1, .footer-2, .footer-3{
+        width:30%;
+        top:0;
+        margin-left:3%;
+     }
+    .footer{
+        margin: 0px auto 0px auto;   
+    }
+    .copyright{
+        width:375px;
+    }
+    .webcamFooter .upw-posts article{
+        width:27%;
+    }
+    .webcamThumbBox{
+        position: relative;
+        left: 22px; 
+        width:100%;
+    }
+    .su-column{
+        margin: 0 2% 0 0!important;
+    }
+    #PageFooter {
+        margin-top: 40px;
+        width:97%
+    }
+    .footerSocials{
+        bottom:73px;
+    }
+    .pageContainer{
+       width: 95%;
+       margin-left:3%;
+      }
+    .full-pageContainer{
+       min-height: 1200px;
+    }
+    .pageContainer h1, .full-pageContainer h1, .full-pageContainer h2 {
+       font-size: 4rem;
+    }
+    #defaultContent {
+       width: 100%;
+       float: right;
+       padding: 20px;
+    }
+    .homepageSidebar {
+       width: 100%;
+    }
+    .pageSidebar{
+       width: 100%;
+    }
+    .pageSidebar #searchbar_checkindate {
+       left: 2rem;
+       width: 63rem;
+       background-position-x: 59rem;
+    }
+    .pageSidebar #searchbar_checkoutdate {
+       width: 63.2rem;
+       background-position-x: 59rem;
+       right: 15.8rem;
+       top: 44px;
+    }
+    .pageSidebar .vrc .searchbar select {
+       right: 25.5rem;
+       width: 20rem;
+       top: 104px;
+    }
+    .pageSidebar .vrc .searchbar input[type="submit"] {
+       top: 105px;
+       width: 22.5rem;
+       right: 16rem;
+       top: 105px;
+    }
+       .searchbar{
+       //width:705px;
+       }
+       .contactContainer {
+       width: 100%;
+       float: right;
+       color: #fff;
+       padding-left: 65px;
+       margin-top: 143px;
+       font-size: 20px;
+       }
+       .conactSideBar {
+       width: 30%;
+       float: left;
+       padding-left: 1%;
+       margin-top:133px;
+       }
+       .conactSideBar .searchbar{
+       width:223px;
+       }
+       .conactSideBar #searchbar_checkindate {
+       width: 19rem;
+       background-position-x: 15rem;
+       left: 0;
+       }
+       .conactSideBar #searchbar_checkoutdate {
+       right: 5.6rem;
+       width: 19rem;
+       top: 44px;
+       background-position-x: 15rem;
+       }
+       .conactSideBar .vrc .searchbar select {
+       top: 105px;
+       right: 11.5rem;
+       width: 10rem;
+       }
+       .conactSideBar .vrc .searchbar input[type="submit"] {
+       top: 102px;
+       width: 9.5rem;
+       right: 6rem;
+       }
+       .VacaContent{
+       width: 90%;
+       margin: 0 auto;    
+       }
+       .vacaHomes{
+           a img.alignleft {
+           width: 139px;
+           }
+       }
+       .VacaPageSidebar{
+           .searchWidget{
+           display:initial;
+           }
+           .searchWidget #searchbar_checkindate {
+           left: 16px;
+           width: 63rem;
+           background-position-x: 59rem;
+           }
+           .searchWidget #searchbar_checkoutdate {
+           top: 45px;
+           right: 15.7rem;
+           width: 63rem;
+           background-position-x: 59rem;
+           }
+           .searchWidget .vrc .searchbar select {
+           top: 99px;
+           right: 32.5rem;
+           width: 27rem;
+           }
+           .searchWidget .vrc .searchbar input[type="submit"] {
+           top: 98px;
+           width: 33.5rem;
+           right: 21rem;
+           }
+           .widgetLinks{
+           width: 50%;
+           margin: 0 auto;    
+           }
+
+       }
+   .blogContainers {
+       margin-top: 420px;
+    }  
+    #DataTables_Table_0 > tbody > tr > td > div.col-sm-3{
+        width:25% !important;
+    }
+}
+@media only screen and (min-width:769px) {
+
+    #post-203 > div.su-row > div.su-column.su-column-size-1-3 > div > div, #post-203 > div.su-row > div.su-column.su-column-size-2-3 > div > div.twofifths > div > div{
+        width:100%;
+        margin:0;
+        }
+}
+
+/*==============================ipad landscape =========================================*/
+@media only screen and (min-width:1024px) {
+    .wrapper {
+        padding-bottom: 285px;
+        background: rgba(255, 255, 255,.8);
+     }
+    .logo{
+    //left:0;
+    margin: 0 0 0 0;
+    }
+    .socialIcons {
+        top:36px;
+        right: 78px;
+        width:17%;
+            h1{
+                display:initial;
+                font-family: 'Kaushan Script', cursive;
+                color: #fff;
+                float: left;
+                font-size: 6em;
+                font-weight: 100;
+                letter-spacing: 2px;
+                margin-top: 0px;
+                position: relative;
+                top: 12px;
+            }
+            img{
+                margin: 5px;
+                width: 41px;
+                display: inline;
+                float: right;
+            }
+    }
+    .headerTitle{
+        color: #fff;
+        float: left;
+        font-size: 2em;
+        font-weight: 100;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 0px;
+        margin: -6px 0 0 187px;
+        h1{
+            font-family: 'Kaushan Script', cursive;
+            font-size: 45px;
+        }
+    }
+    .logo-img {
+    position:relative;
+    top: 22px;
+    left: 20px;
+    }
+    .header {
+    background: url(img/header-background2.jpg);
+    background-size: cover;
+    width: 100%;
+    height:128px;
+    margin:0;
+    }
+    .nav{
+    position: relative; 
+    top:0px;
+    }
+    .nav ul {
+    width: 100%;
+    float: left;
+    background: #062c5f;
+    height: 40px;
+    }
+    .nav li {
+    float: left;
+    display: inline;
+    margin: 10px 0px 0 0px;
+    width: auto;
+    border-right: #FFF solid 2px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Coming Soon', cursive;
+    letter-spacing: 1px;
+    padding: 0 1.1em;
+    }
+    .homepageSidebar{
+    width: 24.66%;
+    float:left;
+    }
+    .hpSocials{
+    width:100%;
+    display:initial;
+        img {
+            margin: 0px 0px;
+            width: 72px;
+       }
+    }
+    .slider {
+        margin: 12px auto 0 auto;
+    }
+    .searchBar.hide-results {
+        display: initial;
+    
+    }
+    .showalways{
+        .vrc .search-hdr{
+            background-position-x: 80px;
+            width: 335px;
+            margin: 0 400px 0 0;
+            //left: 270px;
+            top: 5px;
+        }
+        #searchbar_checkindate{
+            width: 520px;
+            background-position-x: 479px;
+            top: 10px;
+            left: -101px;
+            display: block;
+            margin: 0 auto;
+            
+        }
+        #searchbar_checkoutdate{
+            width: 520px;
+            background-position-x: 479px;
+            top: 10px;
+            left:-10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .vrc .searchbar select{
+            //left: 07px;
+            top: 0px;
+            width: 126px;
+            margin-left: 32px;
+        }
+        .vrc .searchbar input[type="submit"]{
+            width: 246px;
+            left: 0px;
+            top: 0px;
+            margin-left: 30px;
+        }
+    }
+    .newPageContainer{
+        .showalways{
+            #searchbar_checkindate{
+                
+            }
+            #searchbar_checkoutdate{
+                top: 30px;
+                left:-101px;
+            }
+            .vrc .searchbar select{
+                top: -86px;
+                width: 225px;
+                left: 626px;
+            }
+            .vrc .searchbar input[type="submit"]{
+                width: 246px;
+                left: 651px;
+                top: -68px;
+                margin-left: 0; 
+            }
+        }
+    }
+    .newPageContainer{
+        .searchResults{
+            .vrc .searchbar select {
+                top:-128px;
+            }
+            .vrc .searchbar input[type="submit"]{
+                top:-107px;
+            }
+        }
+    }
+    
+    .hpEvents, .hpVacaRentals, .hpVacaRentals, .hpPhotos, .hpliveWeb, .hprestaurant, .hpexplore, .hpfishing, .hpbirding, .hptodo, .hpdaytrips{
+    height:130px;
+    overflow: hidden;
+    }
+    .hpEvents span h2, .hpVacaRentals span h2, .hpPhotos span h2, .hpliveWeb span h2, .hprestaurant span h2, .hpexplore span h2, .hpfishing span h2, .hpbirding span h2, .hptodo span h2, .hpdaytrips span h2{
+    font-size: 3em;
+    position: absolute;
+    top: -24px;
+    height:31px;
+    }
+    #homepageContent{
+    width:74.34%;
+    float:right;
+    padding: 0 15px 0 0;
+    }
+    .orangeBlock{
+    margin-right: 5px;    
+    }
+    img.homepageLighthouse {
+    width: 240px;
+    height: auto;
+    }
+    .homePageLinks a img.alignleft {
+    //margin: 5px 0 0 0;
+    //width: 97px;
+    }
+    .contactContainer{
+        margin-top:0;
+    }
+    #post-203 > div.su-row > div.su-column.su-column-size-1-3 > div > div.golfcart > h3{
+    margin-bottom:6px;    
+    }
+    #post-203 > div.su-row > div.su-column.su-column-size-1-3 > div > div.attorneys > h3{
+    position: relative;
+    margin-bottom: 8px;
+    top: 7px;
+    }
+    
+    #post-203 > div.su-row > div.su-column.su-column-size-2-3 > div > div.threefifths > div.restauants > h3{
+    margin-bottom: 17px;
+    position: relative;
+    top: 9px;   
+        
+    }
+    #post-203 > div.su-row > div.su-column.su-column-size-2-3 {
+    width: 70% !important;
+    }
+   #post-203 > div.su-row > div.su-column.su-column-size-1-3{
+    width: 28.0% !important;
+    }
+    .su-row .su-column {
+    margin: 0 0 0 0 !important;
+    }
+    .su-row .su-column:first-child {
+    margin-left: 0;
+    overflow: hidden;
+    }
+    .threefifths{
+    clear:both; 
+    width:58%;
+    float:left;
+    }
+    .twofifths{
+    float:left;
+    width:39%;
+    margin-left:13px;
+    }
+    .golfcart .homePageLinks2 a img{
+    width:97px;
+    }
+    #post-203 > div.su-row > div.su-column.su-column-size-2-3 > div > div.twofifths > div > div > a > img{
+    margin:0px 0 5px 0;
+    }
+    .pageContainer{
+    line-height: 22px;
+    }
+    .mainContent {
+    width: 66%;
+    }
+    .exploreContent {
+    width: 61%;
+    }
+    .exploreImg img{
+    position:relative;
+    right:41px;
+    }
+    .sidebar {
+    width: 34%;
+    }
+    .searchBar{
+    //width:330px;
+    }
+    .leftSideBar #searchbar_checkoutdate {
+    right: 8.2rem;
+    width: 27rem;
+    background-position-x: 23rem;
+    top: 4.5rem;
+    }
+    .leftSideBar .vrc .searchbar select {
+        top: 10rem;
+        position: relative;
+        right: 16.1rem;
+        width: 13rem;
+    }
+    .leftSideBar .vrc .searchbar input[type="submit"] {
+        top: 10rem;
+        width: 15.5rem;
+        right: 10rem;
+    }
+    .blogContent{
+     width:67%;                 
+    }
+    .blogSidebar {
+        width: 32%;
+    }
+    .blogSidebar #searchbar_checkindate {
+        width: 27rem;
+        background-position-x: 23rem;
+        right: -1rem;
+        position: relative;
+        left:0;
+    }
+    .blogSidebar #searchbar_checkoutdate {
+        right: 8.2rem;
+        width: 27rem;
+        background-position-x: 23rem;
+        top: 4.5rem;
+    }
+    .blogSidebar .vrc .searchbar select {
+        top: 10rem;
+        position: relative;
+        right: 16.1rem;
+        width: 10rem;
+    }
+    .blogSidebar .vrc .searchbar input[type="submit"] {
+        top: 10rem;
+        width: 15.5rem;
+        right: 10rem;
+    }
+    .footer{
+        margin: -15px auto 0px auto; 
+        height: 155px;
+    }
+    .footerSocials {
+        bottom: 61px;
+        right:0;
+    img{
+        width:55px
+    }
+    }
+    .copyright{
+    bottom:0;
+    margin: 56px 0 0 0;
+    }
+    .footerWidgetArea{
+    position: relative;
+    top: 10px;    
+    }
+    .footer-1{
+    width: 30%;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+    }
+    .footer-2{
+    width: 30%;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+    }
+    .footer-3{
+    width: 30%;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+    }
+    .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+    }
+    
+    .pageSidebar {
+    float: left;
+    width: 27%;
+    padding-left: 10px;
+    margin-top:15px;
+    }
+    #PageFooter {
+        width:99%;
+        margin-top: 30px;
+    }
+    .footerWidgetArea {
+    margin-top: 0px;
+    }
+    .searchbar{
+    //width:253px;
+    }
+    .pageSidebar #searchbar_checkindate {
+    position: relative;
+    left: 0;
+    width: 23rem;
+    background-position-x: 19rem;
+    }
+    .pageSidebar #searchbar_checkoutdate {
+    right: 6.5rem;
+    width: 23.3rem;
+    background-position-x: 19.2rem;
+    }
+    .pageSidebar .vrc .searchbar select {
+    top: 105px;
+    right: 13rem;
+    width: 13rem;
+    }
+    .pageSidebar .vrc .searchbar input[type="submit"] {
+    top: 102px;
+    width: 10.5rem;
+    right: 6rem;
+    }
+    .conactSideBar .searchbar{
+    width:297px;
+    }
+    .conactSideBar #searchbar_checkindate {
+    width: 27rem;
+    background-position-x: 23rem;
+    left: 0;
+    }
+    .conactSideBar #searchbar_checkoutdate {
+    right: 7.6rem;
+    width: 27.1rem;
+    background-position-x: 23rem;
+    }
+    .conactSideBar .vrc .searchbar select {
+    top: 105px;
+    right: 15.5rem;
+    width: 14rem;
+    }
+    .conactSideBar .vrc .searchbar input[type="submit"] {
+    top: 104px;
+    width: 12.5rem;
+    right: 7rem;
+    }
+    .pix1, .pix2, .pix3, .pix4, .pix5 {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1    
+    }
+    .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+    }
+    #homepageContent h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4.3em;
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Swash-Behind-Exlpore-Bolivar.png);
+    background-size: 688px 59px;
+    background-repeat: no-repeat;
+    }
+    li.rentalAgencies{
+    position: relative;
+    top:-31px;
+    }
+    li.realestateSales {
+    position: relative;
+    top: -65px;    
+    }
+    li.rvParks{
+    position: relative;
+    top: -98px;     
+    }
+    li.golfCarts{
+    position: relative;
+    top: -140px; 
+    }
+    li.restauants{
+    position: relative;
+    top:-26px;
+    }
+    .attorneys{
+    position: relative;
+    top: -175px;     
+    }
+    #defaultContent{
+    width: 71%;
+    float: right;
+    padding: 20px;    
+    }
+    #VacaContent{
+    width: 71%;
+    float: right;
+    padding: 20px;     
+    }
+    .pageSidebar {
+    float: left;
+    width: 27%;
+    padding-left: 10px;
+    }
+    .vacaHomes{
+        margin-bottom:0;
+        top:0;
+        margin-top: 0;
+        a img.alignleft {
+        width: 114px;
+        }
+    }
+    li.realEstateDev{
+        margin-top: -30px;
+    }
+    li.builders{
+        margin-top:-30px;
+    }
+    .VacaPageSidebar{
+    float: left;
+    width: 27%;
+    padding: 36px 10px 0 0;    
+    }
+    #post-2879 > div.vacaHomes{
+        margin-top: 0!important;
+    }
+    .VacaPageSidebar{
+        .searchbar {
+        width: 253px !important;
+        }
+        .vrc .search-hdr{
+           width: 28rem; 
+        } 
+        .searchWidget #searchbar_checkindate {
+        left: -4px;
+        width: 21.9rem;
+        background-position-x: 17.9rem;
+        }
+        .searchWidget #searchbar_checkoutdate {
+        top: 43px;
+        right: 6.5rem;
+        width: 22rem;
+        background-position-x: 18rem;
+        }
+        .searchWidget .vrc .searchbar select {
+        top: 96px;
+        right: 12.5rem;
+        width: 9rem;
+        }
+        .searchWidget .vrc .searchbar input[type="submit"] {
+        top: 96px;
+        width: 12.5rem;
+        right: 9rem;
+        }
+        .widgetLinks{
+        width:100%;
+        }
+    }
+    .pageContent{
+    p{
+      font-size:1.2em;
+      font-weight:700;
+      color:#172762;
+  }
+}
+.blogContainers {
+    margin-top: 328px;
+}
+}
+@media only screen and (min-width:1140px) {
+    .nav li{
+    font-size: 13px;
+    }
+    .hpEvents, .hpVacaRentals, .hpVacaRentals, .hpPhotos, .hpliveWeb, .hprestaurant, .hpexplore, .hpfishing, .hpbirding, .hptodo, .hpdaytrips {
+    height: 139px;
+    }
+    .vacaHomes{
+        a img.alignleft {
+        width: 99px;
+        }    
+    }
+    .VacaPageSidebar{
+        .hpSocials img {
+        width: 88px;
+        }
+        .searchbar {
+        width: 269px !important;
+        }
+        .searchWidget #searchbar_checkindate{
+        left: -4px;
+        width: 23.9rem;
+        background-position-x: 19.9rem;    
+        }
+        .searchWidget #searchbar_checkoutdate {
+        top: 43px;
+        right: 7.1rem;
+        width: 24rem;
+        background-position-x: 20rem;
+        }
+        .searchWidget .vrc .searchbar select {
+        top: 96px;
+        right: 13.5rem;
+        width: 9rem;
+        }
+    }
+}
+@media only screen and (min-width:1280px) {
+    #post-203>div.su-row>div.su-column.su-column-size-2-3>div>div.twofifths>div>div>a>img {
+    margin: 0px 0 0px 0;
+    }
+    .hpSocials img {
+    margin: 0px 0px;
+    width: 93px;
+    }
+    .hpEvents, .hpVacaRentals, .hpVacaRentals, .hpPhotos, .hpliveWeb, .hprestaurant, .hpexplore, .hpfishing, .hpbirding, .hptodo, .hpdaytrips {
+    height: 152px;
+    overflow: hidden;
+    } 
+    .homepageSidebar .searchbar {
+    width: 286px;
+    }
+    .homepageSidebar #searchbar_checkindate {
+    left: -.4rem;
+    width: 26rem;
+    background-position-x: 22rem;
+    }
+    .homepageSidebar #searchbar_checkoutdate {
+    top: 50px;
+    right: 7.5rem;
+    width: 26rem;
+    background-position-x: 22rem;
+    }
+    .homepageSidebar .vrc .searchbar select {
+    top: 110px;
+    right: 14.5rem;
+    width: 11rem;
+    }
+    .homepageSidebar .vrc .searchbar input[type="submit"] {
+    top: 106px;
+    border-radius: 30px;
+    width: 12.5rem;
+    right: 9rem;
+    }
+    #homepageContent h2{
+    font-size:6.3em;
+    font-size: 4.3em;
+    background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Swash-Behind-Exlpore-Bolivar.png);
+    background-size: 874px 59px;
+    }
+    .vacaHomes a img.alignleft {
+    width: 112px;
+    }
+    .VacaPageSidebar{
+        .hpSocials img {
+        width: 98px;
+        }
+        .searchbar {
+        width: 300px !important;
+        }
+        .vrc .search-hdr {
+        width: 32rem;
+        }
+        .searchWidget #searchbar_checkindate{
+        left: -4px;
+        width: 26.9rem;
+        background-position-x: 22.9rem;   
+        }
+        .searchWidget #searchbar_checkoutdate {
+        top: 43px;
+        right: 8rem;
+        width: 27rem;
+        background-position-x: 23rem;
+        }
+        .searchWidget .vrc .searchbar select {
+        top: 96px;
+        right: 14.5rem;
+        width: 11rem;
+        }
+    }
+}
+@media only screen and (min-width:1390px) {
+    .hpEvents, .hpVacaRentals, .hpVacaRentals, .hpPhotos, .hpliveWeb, .hprestaurant, .hpexplore, .hpfishing, .hpbirding, .hptodo, .hpdaytrips {
+    height: 167px;
+    }
+    .homepageSidebar .searchbar {
+    width: 318px;
+    }
+    .homepageSidebar .vrc .search-hdr {
+    width: 32rem;
+    left: 1px;
+    }
+    .homepageSidebar #searchbar_checkoutdate {
+    top: 50px;
+    right: 8.5rem;
+    width: 26.3rem;
+    background-position-x: 22.3rem;
+    }
+    .hpSocials img {
+    margin: 0px 5px;
+    width: 93px;
+    }
+    #homepageContent h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 6.0em;
+        background: url(http://crystalbeach.hwy87media.com/wp-content/uploads/2016/03/Swash-Behind-Exlpore-Bolivar.png);
+    background-size: 952px 53px;
+    background-repeat: no-repeat;
+    }
+    .VacaPageSidebar{
+        .hpSocials img {
+        width: 98px;
+        }
+        .searchbar {
+        width: 328px !important;
+        }
+        .vrc .search-hdr {
+        width: 32rem;
+        }
+        .searchWidget #searchbar_checkindate{
+        left: -4px;
+        width: 29.9rem;
+        background-position-x: 25.9rem; 
+        }
+        .searchWidget #searchbar_checkoutdate {
+        top: 43px;
+        right: 8.5rem;
+        width: 29.8rem;
+        background-position-x: 25.8rem;
+        }
+        .searchWidget .vrc .searchbar select {
+        top: 96px;
+        right: 14.5rem;
+        width: 11rem;
+        }
+    }
+    .vacaHomes a img.alignleft {
+    width: 123px;
+    }
+}
+@media only screen and (min-width:1500px) {
+    .hpEvents, .hpVacaRentals, .hpVacaRentals, .hpPhotos, .hpliveWeb, .hprestaurant, .hpexplore, .hpfishing, .hpbirding, .hptodo, .hpdaytrips {
+    height: 173px;
+    }
+    .homepageSidebar .searchbar {
+    width: 318px;
+    left: 8px;
+    position: relative;
+    }
+    li.realEstateDev{
+    position: relative;
+    top: -29px;
+    }
+    li.restauants {
+    top: -36px;
+    }
+    li.builders{
+    position: relative;
+    top:-31px;
+    }
+    .vacaHomes a img.alignleft {
+    width: 133px;
+    }
+    .VacaPageSidebar{
+        .hpSocials img {
+        width: 98px;
+        }
+        .searchbar {
+        width: 355px !important;
+        }
+        .vrc .search-hdr {
+        width: 32rem;
+        }
+        .searchWidget #searchbar_checkindate{
+        left: -4px;
+        width: 32.9rem;
+        background-position-x: 28.9rem;
+        }
+        .searchWidget #searchbar_checkoutdate {
+        top: 43px;
+        right: 9.3rem;
+        width: 33rem;
+        background-position-x: 29rem;
+        }
+        .searchWidget .vrc .searchbar select {
+        top: 96px;
+        right: 14.5rem;
+        width: 11rem;
+        }
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+          
+}
